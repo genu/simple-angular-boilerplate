@@ -1,0 +1,15 @@
+server:
+  - 'clean:server'
+  - 'includeSource:server'
+  - 'ngconstant:development'
+  - 'wiredep:server'
+  - 'copy:styles'
+  - 'autoprefixer'
+  - 'connect:livereload'
+  - 'watch'
+
+# work in progress
+docs:
+  - 'clean:docs'
+  - 'docular'
+  - 'docularserver'
