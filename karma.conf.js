@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['jasmine'],
 
 
     // list of files / patterns to load in the browser
@@ -20,6 +20,7 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+      'bower_components/angular-local-storage/dist/angular-local-storage.js',
 
       // Application dependencies
       'src/**/*.js',

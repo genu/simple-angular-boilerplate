@@ -1,8 +1,10 @@
-angular.module('app').factory('Core', function(){
+angular.module('app').factory('Core', function(localStorageService){
   return {
-    isAuthenticated: function(){
-      // Check of user is authenticated
-      return true
+    saveState: function(state) {
+      localStorageService.set('appState', state)
+    },
+    loadState: function() {
+      return localStorageService.get('appState')
     }
   }
 })

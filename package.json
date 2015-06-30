@@ -56,12 +56,10 @@
     "time-grunt": "^1.0.0"
   },
   "devDependencies": {
-    "chai": "latest",
     "connect-livereload": "^0.5.2",
     "jasmine-core": "^2.2.0",
     "jit-grunt": "^0.9.1",
     "karma": "^0.12.37",
-    "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "latest",
     "karma-cli": "0.0.4",
     "karma-coverage": "^0.2.7",
