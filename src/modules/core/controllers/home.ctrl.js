@@ -6,5 +6,9 @@
  * @description
  * Application level functions
  */
-angular.module('module.core').controller('HomeCtrl', function () {
+angular.module('module.core').controller('HomeCtrl', function (Github) {
+  var vm = this;
+  Github.getRepositories('genu').then(function(repos){
+    vm.repos = repos.data
+  })
 });
