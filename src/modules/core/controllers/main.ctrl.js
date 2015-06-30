@@ -7,8 +7,4 @@
  * Application level functions
  */
 angular.module('module.core').controller('MainCtrl', function () {
-  this.user = {
-    name: 'Eugen Istoc',
-    username: 'genu'
-  }
 });

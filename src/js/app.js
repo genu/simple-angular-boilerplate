@@ -9,7 +9,6 @@
 angular.module('app', [
     'ui.router', 'ui.bootstrap',
     'SimpleFrontendBoilerplate.environment',
-    'LocalStorageModule',
     'module.core'
 ]).config(function ($urlRouterProvider, ENV) {
     $urlRouterProvider.otherwise('/app');
