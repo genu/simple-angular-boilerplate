@@ -6,7 +6,7 @@ angular.module('module.core').config(function ($stateProvider) {
             abstract: true,
             url: '/app',
             templateUrl: 'modules/core/views/app.html',
-            controller: 'MainCtrl',
+            controller: 'MainCtrl as main',
         })
         .state('app.home', {
             url: '',

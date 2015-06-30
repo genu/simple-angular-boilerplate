@@ -9,12 +9,6 @@ describe('Unit: Testing github service', function(){
     $httpBackend = _$httpBackend_;
   }));
 
-  //
-  afterEach(function() {
-     $httpBackend.verifyNoOutstandingExpectation();
-     $httpBackend.verifyNoOutstandingRequest();
-   });
-
   it('should return a list of repositories', function(){
     var mockResponse = [
       {
