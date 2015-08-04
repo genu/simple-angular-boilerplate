@@ -1,4 +1,4 @@
-# Simple Frontend Boilerplate
+# Simple Angular Boilerplate
 This is a simple boilerplate architecture for frontend angular projects.
 ### Philosophy
 Simple modular architecture for building angular applications. The architecture is build around modular angular components and grunt tasks separated out into their own files.
