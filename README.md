@@ -1,5 +1,5 @@
 # Simple Angular Boilerplate
-This is a simple boilerplate architecture for frontend angular projects.
+This is a simple boilerplate architecture for frontend angular projects. For complete documentation, see the [Wiki](https://github.com/genu/simple-angular-boilerplate/wiki) page.
 ### Philosophy
 Simple modular architecture for building angular applications. The architecture is build around modular angular components and grunt tasks separated out into their own files.
 ## Prerequisites
@@ -52,8 +52,8 @@ The best way to extend an application is to add modules to the `modules/` direct
 
 ## TODO
 - [ ] Add `grunt build` task for building a production ready project in `dist/`
-- [ ] Add a task for generating projet documentation under `docs`
-- [ ] Move environment configuration in `environment.json` and pull from it when generating `environment.js`
+- [ ] Add a task for generating project documentation under `docs`
+- [x] Move environment configuration in `environments.yaml` and pull from it when generating `environment.js`
 - [x] Add a task to run tests
 
 ## License
