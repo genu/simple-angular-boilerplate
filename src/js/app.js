@@ -11,5 +11,5 @@ angular.module('app', [
   'app.environment',
   'module.core'
 ]).config(function($urlRouterProvider, ENV) {
-  $urlRouterProvider.otherwise('/app');
+  $urlRouterProvider.otherwise('/page/home');
 }).run(function() {});
