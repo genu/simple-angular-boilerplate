@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       name: 'app.environment',
       dest: '<%= src %>/js/environment.js',
       constants: {
-        package: grunt.file.readJSON('bower.json')
+        PACKAGE: grunt.file.readJSON('bower.json')
       }
     },
     development: {
