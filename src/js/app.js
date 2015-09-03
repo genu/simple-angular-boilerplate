@@ -7,10 +7,9 @@
  *
  */
 angular.module('app', [
-    'ui.router', 'ui.bootstrap',
-    'SimpleFrontendBoilerplate.environment',
-    'module.core'
-]).config(function ($urlRouterProvider, ENV) {
-    $urlRouterProvider.otherwise('/app');
-}).run(function () {
-});
+  'ui.router', 'ui.bootstrap',
+  'app.environment',
+  'module.core'
+]).config(function($urlRouterProvider, ENV) {
+  $urlRouterProvider.otherwise('/app');
+}).run(function() {});
