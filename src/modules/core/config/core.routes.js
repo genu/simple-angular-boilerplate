@@ -8,14 +8,19 @@ angular.module('module.core').config(function($stateProvider, USER_ROLES) {
       templateUrl: 'modules/core/views/layouts/app.html',
       controller: 'AppCtrl as app',
       data: {
-        authorizedRoles: [USER_ROLES.registered]
+        authorizedRoles: [USER_ROLES.registered],
+        authRequired: true
       }
     })
     .state('page', {
       abstract: true,
       url: '/page',
       templateUrl: 'modules/core/views/layouts/page.html',
-      controller: 'PageCtrl as page'
+      controller: 'PageCtrl as page',
+      data: {
+        authorizedRoles: [USER_ROLES.all],
+        authRequired: false
+      }
     })
     .state('page.home', {
       url: '/home',
