@@ -1,7 +1,7 @@
 # Simple Angular Boilerplate
 This is a simple boilerplate architecture for frontend angular projects. For complete documentation, see the [Wiki](https://github.com/genu/simple-angular-boilerplate/wiki) page.
 
-See (Roadmap)[https://github.com/genu/simple-angular-boilerplate/wiki/Roadmap] for planned future developments.
+See [Roadmap](https://github.com/genu/simple-angular-boilerplate/wiki/Roadmap) for planned future developments.
 
 ### Philosophy
 Modular architecture for building angular applications with an emphasis on minimal dependencies, lightweight core, and agnostic toward third party services.
