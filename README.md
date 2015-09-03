@@ -54,7 +54,7 @@ The best way to extend an application is to add modules to the `modules/` direct
 - [ ] Add `grunt build` task for building a production ready project in `dist/`
 - [ ] Add a task for generating projet documentation under `docs`
 - [ ] Move environment configuration in `environment.json` and pull from it when generating `environment.js`
-- [ ] Add a task to run tests
+- [x] Add a task to run tests
 
 ## License
 Licensed under the MIT License
