@@ -1,26 +1,29 @@
 'use strict';
 
-angular.module('module.core').config(function ($stateProvider) {
-    $stateProvider
-        .state('app', {
-            abstract: true,
-            url: '/app',
-            templateUrl: 'modules/core/views/app.html',
-            controller: 'MainCtrl as main',
-        })
-        .state('app.home', {
-            url: '',
-            templateUrl: 'modules/core/views/home.html',
-            controller: 'HomeCtrl as home'
-          })
-        .state('app.about', {
-            url:'/about',
-            templateUrl: 'modules/core/views/about.html',
-            controller: 'AboutCtrl as about'
-        })
-        .state('app.architecture', {
-            url:'/architecture',
-            templateUrl: 'modules/core/views/architecture.html',
-            controller: 'ArchitectureCtrl as architecture'
-        })
-      });
+angular.module('module.core').config(function($stateProvider, USER_ROLES) {
+  $stateProvider
+    .state('app', {
+      abstract: true,
+      url: '/app',
+      templateUrl: 'modules/core/views/layouts/app.html',
+      controller: 'AppCtrl as app',
+    })
+    .state('page', {
+      abstract: true,
+      url: '/page',
+      templateUrl: 'modules/core/views/layouts/page.html',
+      controller: 'PageCtrl as page'
+    })
+    .state('page.home', {
+      url: '/home',
+      templateUrl: 'modules/core/views/home.html'
+    })
+    .state('page.about', {
+      url: '/about',
+      templateUrl: 'modules/core/views/about.html'
+    })
+    .state('page.architecture', {
+      url: '/architecture',
+      templateUrl: 'modules/core/views/architecture.html'
+    })
+});
