@@ -7,6 +7,9 @@ angular.module('module.core').config(function($stateProvider, USER_ROLES) {
       url: '/app',
       templateUrl: 'modules/core/views/layouts/app.html',
       controller: 'AppCtrl as app',
+      data: {
+        authorizedRoles: [USER_ROLES.registered]
+      }
     })
     .state('page', {
       abstract: true,
