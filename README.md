@@ -1,7 +1,11 @@
 # Simple Angular Boilerplate
 This is a simple boilerplate architecture for frontend angular projects. For complete documentation, see the [Wiki](https://github.com/genu/simple-angular-boilerplate/wiki) page.
+
+See (Roadmap)[https://github.com/genu/simple-angular-boilerplate/wiki/Roadmap] for planned future developments.
+
 ### Philosophy
-Simple modular architecture for building angular applications. The architecture is build around modular angular components and grunt tasks separated out into their own files.
+Modular architecture for building angular applications with an emphasis on minimal dependencies, lightweight core, and agnostic toward third party services.
+
 ## Prerequisites
 [grunt](https://github.com/gruntjs/grunt) and [bower](https://github.com/bower/bower) should already be installed
 ## Quick Start
@@ -45,16 +49,13 @@ src/
 ## Extending
 The best way to extend an application is to add modules to the `modules/` directory as needed by your application. The `core` module should act as a global module, therefore, application wide functionality should be added to the `core` module.
 
+## Contributing
+I accept pull requests for fixes and/or new features. For small hotfixes, I will merge code, however, for everything else, please make sure to open up an issue first.
+
 ### Steps
 1. Create a module similar to the `core` module in the `modules/` directory
 2. Add the new module as a dependency to the application in `src/js/app.js`
 2. Relaunch the server with `grunt server`
-
-## TODO
-- [ ] Add `grunt build` task for building a production ready project in `dist/`
-- [ ] Add a task for generating project documentation under `docs`
-- [x] Move environment configuration in `environments.yaml` and pull from it when generating `environment.js`
-- [x] Add a task to run tests
 
 ## License
 Licensed under the MIT License
