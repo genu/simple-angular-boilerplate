@@ -1,4 +1,4 @@
-module.exports = function() {
+module.exports = function(grunt) {
   return {
     options: {
       space: '  ',
@@ -6,22 +6,17 @@ module.exports = function() {
       name: 'app.environment',
       dest: '<%= src %>/js/environment.js',
       constants: {
-        APP_NAME: '<%= pkg.name %>',
-        APP_DESCRIPTION: '<%= pkg.description %>'
+        package: grunt.file.readJSON('bower.json')
       }
     },
     development: {
       constants: {
-        ENV: {
-          API_URL: "HTTP://DEV_API"
-        }
+        ENV: grunt.file.readYAML('environments.yaml')['development']
       }
     },
     production: {
       constants: {
-        ENV: {
-          API_URL: "HTTP://PROD_API"
-        }
+        ENV: grunt.file.readYAML('environments.yaml')['production']
       }
     }
   }
