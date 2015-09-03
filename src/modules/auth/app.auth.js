@@ -6,4 +6,4 @@
  * @decription
  * Provides basic authentication features
  */
-angular.module('module.auth', []);
+angular.module('module.auth', ['app.environment', 'angular-storage']);
