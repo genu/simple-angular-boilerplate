@@ -6,4 +6,4 @@
  * @description
  * The Core module
  */
-angular.module('module.core', []);
+angular.module('module.core', ['module.auth']);
