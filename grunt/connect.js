@@ -2,8 +2,8 @@ module.exports = function() {
   return {
     options: {
       hostname: 'localhost',
-      livereload: 35729
-      useAvailablePort: true,
+      livereload: 35729,
+      useAvailablePort: true
     },
     livereload: {
       options: {
